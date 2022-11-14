@@ -1,0 +1,25 @@
+{
+  "name": "deepquantum.github.io",
+  "version": "1.0.0",
+  "description": "A christmas games for a friend.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepQuantum/deepquantum.github.io.git"
+  },
+  "author": "Damian G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeepQuantum/deepquantum.github.io/issues"
+  },
+  "homepage": "https://deepquantum.github.io",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
