@@ -1,0 +1,9 @@
+[-------- BOOTING TERMINAL. -----]
+
+[-------- LOGGING IN AS USER <BigDragon>. LOOKING FOR AVAILABLE FREQUENCIES… --------]
+
+[-------- CONNECTING TO EMERGENCY FREQUENCY 441.54 GHz… --------]
+[-------- CONNECTED TO EMERGENCY FREQUENCY 441.54 GHz --------]
+[-------- … --------]
+[-------- … --------]
+[-------- RECEIVING SIGNAL FROM <ủ̶̥̖͂ǹ̸̰k̴̖̓̊ṇ̷̔o̶̧͎̍͝w̸̭͐͗n̶̺̥͘ ̶̖͗͝s̸̝͔̽̓o̴̧̔u̷͍͆͊r̴̜͂̔c̵̰̓̚è̵̕ͅ>. DISTRESS LEVEL: 15 --------]
