@@ -1,3 +1,19 @@
 * {
     font-family: "Consolas";
 }
+
+body {
+    background-color: grey;
+}
+
+
+#input-field {
+    width: 50%;
+}
+
+#output-field {
+    background-color: #000000;
+    color: #00ee00;
+    width: 50%;
+    height: 50vh;
+}
