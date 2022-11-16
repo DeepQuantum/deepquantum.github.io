@@ -3,21 +3,38 @@ let strings = {
         req: {
             lvl: 0,
             login: "",
-        }
+        },
+        response: [
+            "This is a list of all the commands available:",
+            "       - help: Show this message.",
+            "       - shownet: Show the users in the current network.",
+            "       - connect <address> <password>: Connect to a user.",
+        ]
     }
 }
 
 const input_field = document.getElementById("input-field");
-const output_field = document.getElementById("output-field")
+const output_field = document.getElementById("output-field");
+
+const respond = (key) => {
+    strings[key]["response"].forEach(s => {
+        appl(s);
+    });
+}
+
+const appl = (msg) => {
+    output_field.value += `>> ${msg}\n`
+    output_field.scrollTop = output_field.scrollHeight;
+}
 
 const parseMessage = (e) => {
     var msg = e.target.value;
     if (msg.includes("\n")) {
         if (msg.slice(0, -1) in strings) {
-            output_field.value = msg;
+            respond(msg.slice(0, -1))
         }
         else {
-            output_field.value = "Unknown command. Please enter something correct."
+            appl(`Unknown command '${msg.slice(0, -1)}'. Type 'help' for a list of all commands.`)
         }
         e.target.value = "";
     }
