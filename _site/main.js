@@ -1,4 +1,4 @@
-let strings = {
+let commands = {
     "help": {
         req: {
             lvl: 0,
@@ -10,6 +10,15 @@ let strings = {
             "       - shownet: Show the users in the current network.",
             "       - connect <address> <password>: Connect to a user.",
         ]
+    },
+    "clear": {
+        req: {
+            lvl: 0,
+            login: "",
+        },
+        response: [
+
+        ]
     }
 }
 
@@ -17,7 +26,7 @@ const input_field = document.getElementById("input-field");
 const output_field = document.getElementById("output-field");
 
 const respond = (key) => {
-    strings[key]["response"].forEach(s => {
+    commands[key]["response"].forEach(s => {
         appl(s);
     });
 }
@@ -30,7 +39,7 @@ const appl = (msg) => {
 const parseMessage = (e) => {
     var msg = e.target.value;
     if (msg.includes("\n")) {
-        if (msg.slice(0, -1) in strings) {
+        if (msg.slice(0, -1) in commands) {
             respond(msg.slice(0, -1))
         }
         else {
